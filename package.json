@@ -1,0 +1,14 @@
+{
+  "name": "jenkins-web-demo",
+  "version": "1.0.0",
+  "description": "Demo Express app for Jenkins and Docker",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Elsayed Hany",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
