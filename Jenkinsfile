@@ -25,13 +25,13 @@ pipeline
        stage('Test Application') {
              steps {
                  sh '''
-                     for i in {1..5}; do
-                      curl -f http://localhost:3000 && exit 0
-                     echo "Waiting for app to start..."
-                     sleep 2
-                     done
-                      echo "App did not start in time"
-                     exit 1
+                    for i in {1..5}; do
+                        curl -f http://localhost:3000 && exit 0
+                        echo "Waiting for app to start..."
+                        sleep 2
+                    done
+                    echo "App did not start in time"
+                    exit 1
                  '''
         }
     }
